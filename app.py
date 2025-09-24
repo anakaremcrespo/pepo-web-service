@@ -34,7 +34,7 @@ def hola():
         </head>
         <body>
             <div>
-                <h1>Hola Mundo, bienvenido a Pepo Web Service</h1>
+                <h1>Hola, bienvenido a Pepo Web Service</h1>
                 <p>Ana Karem Crespo López - 22031437</p>
             </div>
         </body>
