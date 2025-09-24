@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hola():
-    return jsonify({"mensaje": "Hola Mundo"})
+    return jsonify({"mensaje": "Hola Mundo, bienvenido a Pepo Web Service"})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
