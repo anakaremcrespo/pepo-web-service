@@ -40,6 +40,13 @@ def hola():
         </body>
     </html>
     """
+# Ruta que devuelve JSON
+@app.route("/json")
+def hola_json():
+    return jsonify({
+        "mensaje": "Hola Mundo, bienvenido a Pepo Web Service",
+        "nombre": "Ana Karem Crespo López"
+    })
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
