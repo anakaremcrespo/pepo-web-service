@@ -1,10 +1,11 @@
 import os
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+# Ruta principal: HTML bonito
 @app.route("/")
-def hola():
+def hola_html():
     return """
     <html>
         <head>
@@ -30,17 +31,32 @@ def hola():
                     font-size: 24px;
                     margin: 10px 0 0 0;
                 }
+                a {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: #2e8b57;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+                a:hover {
+                    background-color: #246b45;
+                }
             </style>
         </head>
         <body>
             <div>
-                <h1>Hola, bienvenido a Pepo Web Service</h1>
-                <p>Ana Karem Crespo López - 22031437</p>
+                <h1>Hola Mundo, bienvenido a Pepo Web Service</h1>
+                <p>Ana Karem Crespo López</p>
+                <a href="/json">Ver JSON</a>
             </div>
         </body>
     </html>
     """
-# Ruta que devuelve JSON
+
+# Ruta JSON
 @app.route("/json")
 def hola_json():
     return jsonify({
