@@ -35,7 +35,7 @@ def hola_html():
         <body>
             <div>
                 <h1>Hola Mundo, bienvenido a Pepo Web Service</h1>
-                <p>Ana Karem Crespo López</p>
+                <p>Ana Karem Crespo Lopez - 22031437</p>
             </div>
         </body>
     </html>
@@ -44,7 +44,7 @@ def hola_html():
 def hola_json():
     return jsonify({
         "mensaje": "Hola Mundo, bienvenido a Pepo Web Service",
-        "nombre": "Ana Karem Crespo López"
+        "nombre": "Ana Karem Crespo Lopez - 22031437"
     })
 
 if __name__ == "__main__":
